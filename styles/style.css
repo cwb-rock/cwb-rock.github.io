@@ -454,7 +454,13 @@ section {
 
 @media screen and (max-width: 1196px){
     .logo-banner-container .content {
+        padding-top: 90px;
         flex-direction: column;
+        flex-wrap: unset;
+    }
+
+    .banner-main-title {
+        font-size: 2rem;
     }
 
     .team-persons-container {
@@ -492,15 +498,42 @@ section {
 
         padding: 20px 0;
 
-        transform: translateY(-200%);
-        transition: 0.3s ease;
+        transform: translateY(-150%);
+        opacity: 0;
+        pointer-events: none;
+
+        transition: all 0.3s ease;
     }
 
     .nav-links.active {
         transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
     }
 
     .hamburger {
         display: flex;
+    }
+
+    .card-contact {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .member {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .manifest-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .manifest {
+        font-size: 1rem;
     }
 }

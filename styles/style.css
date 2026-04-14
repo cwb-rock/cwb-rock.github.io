@@ -454,9 +454,10 @@ section {
 
 @media screen and (max-width: 1196px){
     .logo-banner-container .content {
-        padding-top: 90px;
+        padding-top: 100px;
         flex-direction: column;
         flex-wrap: unset;
+        height: calc(85vh - 125px);
     }
 
     .banner-main-title {

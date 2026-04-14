@@ -465,6 +465,7 @@ section {
 
     .team-persons-container {
         width: 80%;
+        gap: 20px;
     }
 
     #main-logo {
